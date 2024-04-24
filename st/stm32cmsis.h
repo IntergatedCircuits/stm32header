@@ -46,9 +46,21 @@
 #elif __has_include("stm32l5xx.h")
 #include "stm32l5xx.h"
 #define __STM32_DEVICE_VERSION (__STM32L5_DEVICE_VERSION)
+#elif __has_include("stm32u0xx.h")
+#include "stm32u0xx.h"
+#define __STM32_DEVICE_VERSION (__STM32U0_DEVICE_VERSION)
 #elif __has_include("stm32u5xx.h")
 #include "stm32u5xx.h"
 #define __STM32_DEVICE_VERSION (__STM32U5_DEVICE_VERSION)
+#elif __has_include("stm32wbaxx.h")
+#include "stm32wbaxx.h"
+#define __STM32_DEVICE_VERSION (__STM32WBA_DEVICE_VERSION)
+#elif __has_include("stm32wbxx.h")
+#include "stm32wbxx.h"
+#define __STM32_DEVICE_VERSION (__STM32WB_DEVICE_VERSION)
+#elif __has_include("stm32wlxx.h")
+#include "stm32wlxx.h"
+#define __STM32_DEVICE_VERSION (__STM32WL_DEVICE_VERSION)
 #else
 
 #endif
